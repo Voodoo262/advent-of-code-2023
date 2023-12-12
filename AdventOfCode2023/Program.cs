@@ -4,7 +4,7 @@ Console.WriteLine("Hello, World!");
 /// Day 1 - Part 1
 {
     int sum = 0;
-    foreach (string line in File.ReadAllLines(Path.Combine("PuzzleInput", "day1-1.txt")))
+    foreach (string line in File.ReadAllLines(Path.Combine("PuzzleInput", "day01.txt")))
     {
         char? firstDigit = null;
         char? lastDigit = null;
@@ -30,7 +30,7 @@ Console.WriteLine("Hello, World!");
 /// Day 1 - Part 2
 {
     int sum = 0;
-    foreach (string line in File.ReadAllLines(Path.Combine("PuzzleInput", "day1-1.txt")))
+    foreach (string line in File.ReadAllLines(Path.Combine("PuzzleInput", "day01.txt")))
     {
         char? firstDigit = null;
         char? lastDigit = null;
