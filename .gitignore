@@ -1,0 +1,9 @@
+.vs/
+LabelngDesigner/bin/
+LabelngDesigner/obj/
+**/Debug/
+**/Release/
+**/obj/
+*.user
+packages/
+pass.txt
