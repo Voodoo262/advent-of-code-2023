@@ -8,11 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="PuzzleInput\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="PuzzleInput\day1-1.txt">
+    <None Update="PuzzleInput\day01.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="PuzzleInput\day02.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

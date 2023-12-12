@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Text.RegularExpressions;
+
 Console.WriteLine("Hello, World!");
 
 /// Day 1 - Part 1
@@ -108,4 +110,81 @@ Console.WriteLine("Hello, World!");
         sum += 10 * (int)char.GetNumericValue(firstDigit ?? '0') + (int)char.GetNumericValue(lastDigit ?? '0');
     }
     Console.WriteLine($"Day 1 - Part 2: {sum}");
+}
+
+/// Day 2 - Part 1
+{
+    int sum = 0;
+    foreach (string line in File.ReadAllLines(Path.Combine("PuzzleInput", "day02.txt")))
+    {
+        int colonPos = line.IndexOf(':');
+        int dayNumber = int.Parse(line.Substring(0, colonPos).Split(' ')[1]);
+        int redCount = 0;
+        int greenCount = 0;
+        int blueCount = 0;
+        foreach (string hand in line.Trim().Split(';'))
+        {
+            foreach (Match m in Regex.Matches(hand, "(\\d+) (red|green|blue)"))
+            {
+                int cubeCount = int.Parse(m.Groups[1].Value);
+                string cubeColor = m.Groups[2].Value;
+                switch (cubeColor)
+                {
+                    case "red":
+                        redCount = Math.Max(redCount, cubeCount);
+                        break;
+                    case "green":
+                        greenCount = Math.Max(greenCount, cubeCount);
+                        break;
+                    case "blue":
+                        blueCount = Math.Max(blueCount, cubeCount);
+                        break;
+                    default:
+                        throw new InvalidDataException("invalid color " + cubeColor);
+                }
+            }
+        }
+        if (redCount <= 12 && greenCount <= 13 && blueCount <= 14)
+        {
+            sum += dayNumber;
+        }
+    }
+    Console.WriteLine($"Day 2 - Part 1: {sum}");
+}
+
+/// Day 2 - Part 2
+{
+    int sum = 0;
+    foreach (string line in File.ReadAllLines(Path.Combine("PuzzleInput", "day02.txt")))
+    {
+        int colonPos = line.IndexOf(':');
+        int dayNumber = int.Parse(line.Substring(0, colonPos).Split(' ')[1]);
+        int redCount = 0;
+        int greenCount = 0;
+        int blueCount = 0;
+        foreach (string hand in line.Trim().Split(';'))
+        {
+            foreach (Match m in Regex.Matches(hand, "(\\d+) (red|green|blue)"))
+            {
+                int cubeCount = int.Parse(m.Groups[1].Value);
+                string cubeColor = m.Groups[2].Value;
+                switch (cubeColor)
+                {
+                    case "red":
+                        redCount = Math.Max(redCount, cubeCount);
+                        break;
+                    case "green":
+                        greenCount = Math.Max(greenCount, cubeCount);
+                        break;
+                    case "blue":
+                        blueCount = Math.Max(blueCount, cubeCount);
+                        break;
+                    default:
+                        throw new InvalidDataException("invalid color " + cubeColor);
+                }
+            }
+        }
+        sum += redCount * greenCount * blueCount;
+    }
+    Console.WriteLine($"Day 2 - Part 2: {sum}");
 }
