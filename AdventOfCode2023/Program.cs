@@ -29,7 +29,7 @@ tasks.Add(Task.Run(() =>
         }
         sum += 10 * (int)char.GetNumericValue(firstDigit ?? '0') + (int)char.GetNumericValue(lastDigit ?? '0');
     }
-    return $"Day 1 - Part 1: {sum}";
+    return $"{sum}";
 }));
 
 ///
@@ -115,7 +115,7 @@ tasks.Add(Task.Run(() =>
         }
         sum += 10 * (int)char.GetNumericValue(firstDigit ?? '0') + (int)char.GetNumericValue(lastDigit ?? '0');
     }
-    return $"Day 1 - Part 2: {sum}";
+    return $"{sum}";
 }));
 
 ///
@@ -158,7 +158,7 @@ tasks.Add(Task.Run(() =>
             sum += dayNumber;
         }
     }
-    return $"Day 2 - Part 1: {sum}";
+    return $"{sum}";
 }));
 
 ///
@@ -198,7 +198,7 @@ tasks.Add(Task.Run(() =>
         }
         sum += redCount * greenCount * blueCount;
     }
-    return $"Day 2 - Part 2: {sum}";
+    return $"{sum}";
 }));
 
 ///
@@ -254,14 +254,16 @@ tasks.Add(Task.Run(() =>
             }
         }
     }
-    return $"Day 3 - Part 1: {sum}";
+    return $"{sum}";
 }));
 
 Task.WaitAll(tasks.ToArray());
 
-// Print output of each task
+// Print output of each puzzle (in sequence)
+int puzzleNumber = 1;
 foreach (var task in tasks)
 {
+    puzzleNumber++;
     var result = await task;
-    Console.WriteLine(result);
+    Console.WriteLine($"Day {puzzleNumber/2} - Part {puzzleNumber%2+1}: {result}");
 }
