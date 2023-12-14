@@ -257,6 +257,231 @@ tasks.Add(Task.Run(() =>
     return $"{sum}";
 }));
 
+///
+/// Day 3 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 4 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 4 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 5 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 5 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 6 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 6 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 7 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 7 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 8 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 8 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 9 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 9 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 10 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 10 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 11 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 11 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 12 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 12 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 13 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 13 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 14 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 14 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 15 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 15 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 16 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 16 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 17 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 17 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 18 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 18 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 19 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 19 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 20 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 20 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 21 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 21 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 22 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 22 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 23 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 23 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 24 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 24 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 25 - Part 1
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
+///
+/// Day 25 - Part 2
+/// 
+tasks.Add(Task.Run(() => "TODO"));
+
 // Print output of each puzzle (in sequence)
 int puzzleNumber = 1;
 foreach (var task in tasks)
