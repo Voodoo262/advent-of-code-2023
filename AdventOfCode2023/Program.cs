@@ -257,8 +257,6 @@ tasks.Add(Task.Run(() =>
     return $"{sum}";
 }));
 
-Task.WaitAll(tasks.ToArray());
-
 // Print output of each puzzle (in sequence)
 int puzzleNumber = 1;
 foreach (var task in tasks)
